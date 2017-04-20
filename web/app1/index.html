@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ferret User Testing</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.4.0/introjs.min.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.4.0/intro.min.js"></script>
+	<style>
+		h1 {margin-bottom:30px; margin-top:30px;}
+	</style>
+</head>
+
+<body>
+<div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="background-color:rgba(250,250,250,0.9)">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Do you want to try Tutorial?</h4>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">No, Skip Tutorial</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="startIntro()">Yes, Start Tutorial</button>
+      </div>
+    </div>
+  </div>
+</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7">
+			<h1>Instruction</h1>
+			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" style="width:70%"  data-step="1" data-intro="Here are instructions for setups and tasks." data-position="right">
+			  <div class="panel panel-default">
+			    <div class="panel-heading" role="tab" id="headingOne">
+			      <h4 class="panel-title" >
+			        <a class="collapsed" id="collapseTriggerOne" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" data-step="3" data-intro="Click the panel to see or hide instructions.">
+			          Setup 1 - Enable Ferret Logging Service
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapseOne" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="headingOne">
+			      <div class="panel-body">
+			      <ol>
+			      	<li data-step="4" data-intro="Follow each step carefully.">Click 'Tap to Play' button.</li>
+			      	<li>Click 'Ferret Logging Service' menu.
+			      	<i class="fa fa-question-circle-o " aria-hidden="true" style="float:right; margin-left: auto; margin-right: auto; cursor:pointer;" data-container="body" data-toggle="popover2" data-animation="false" style="width:100%" data-step="5" data-intro="Click question mark icon to see detailed instruction"></i>
+			      	</li>
+			      	<li>Click the toggle switch on the top right corner to turn 'On'.
+			      	<i class="fa fa-question-circle-o " aria-hidden="true" style="float:right; margin-left: auto; margin-right: auto; cursor:pointer;" data-container="body" data-toggle="popover3" data-animation="false" style="width:100%"></i>
+			      	</li>
+			      	<li>Click 'Ok'.
+			      	<i class="fa fa-question-circle-o " aria-hidden="true" style="float:right; margin-left: auto; margin-right: auto; cursor:pointer;" data-container="body" data-toggle="popover4" data-animation="false" style="width:100%"></i>
+			      	</li>
+			      	<li>Make sure the 'Ferret Logging Service' is now 'On'. Then click the back arrow on the top left corner to return to the Accessibility menu.
+			      	<i class="fa fa-question-circle-o " aria-hidden="true" style="float:right; margin-left: auto; margin-right: auto; cursor:pointer;" data-container="body" data-toggle="popover5" data-animation="false" style="width:100%"></i>
+			      	</li>
+			      </ol>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="panel panel-default">
+			    <div class="panel-heading" role="tab" id="headingTwo">
+			      <h4 class="panel-title">
+			        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+			          Setup 2 - Fill out your ID
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+			      <div class="panel-body">
+			        <ol>
+			      	<li>Click the triangle button on the bottom left of the phone screen.
+			      	<i class="fa fa-question-circle-o " aria-hidden="true" style="float:right; margin-left: auto; margin-right: auto; cursor:pointer;" data-container="body" data-toggle="popover6" data-animation="false" style="width:100%"></i>
+			      	</li>
+			      	<li>Enter your Amazon Mechanical Turk Worker ID (14 characters) and Task ID (specified in the HIT) <b>(***Make sure you enter the correct answers to get paid)</b> After putting IDs, click 'Go to the Application' button.
+			      	<i class="fa fa-question-circle-o " aria-hidden="true" style="float:right; margin-left: auto; margin-right: auto; cursor:pointer;" data-container="body" data-toggle="popover7" data-animation="false" style="width:100%"></i>
+			      	</li>
+			      	<li>Once you are on the home screen, you can start the task. You can find applications by clicking the home button(circle button with dots).
+			      	<i class="fa fa-question-circle-o " aria-hidden="true" style="float:right; margin-left: auto; margin-right: auto; cursor:pointer;" data-container="body" data-toggle="popover8" data-animation="false" style="width:100%"></i>
+			      	</li>
+			      </ol>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="panel panel-default">
+			    <div class="panel-heading" role="tab" id="headingThree">
+			      <h4 class="panel-title">
+			        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+			          Task 1 - Simple Calculation
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+			      <div class="panel-body">
+			        <ol><li>Launch Calculator app.</li><li>Calculate 2*5-3</li><li>Hit 'CLR' button.</li><li>Go back to the home screen.</li></ol>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="panel panel-default">
+			    <div class="panel-heading" role="tab" id="headingFour">
+			      <h4 class="panel-title">
+			        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+			          Task 2 - Complex Calculation
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+			      <div class="panel-body">
+			        <ol><li>Launch Calculator app.</li><li>Calculate ((3+5)*2-4)/3 <br/><i>You can either use parentheses to calculate or keep calculating each part.</i><i class="fa fa-question-circle-o " aria-hidden="true" style="float:right; margin-left: auto; margin-right: auto; cursor:pointer;" data-container="body" data-toggle="popover9" data-animation="false" style="width:100%"></i></li><li>Hit 'CLR' button.</li><li>Go back to the home screen.</li></ol>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="panel panel-default">
+			    <div class="panel-heading" role="tab" id="headingFive">
+			      <h4 class="panel-title">
+			        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+			          Task 3 - Error Handling
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+			      <div class="panel-body">
+			        <ol><li>Launch Calculator app.</li><li>Calculate 10/0</li><li>After you see the error, Calculate 10/2</li><li>Clear the screen.</li><li>Go back to the home screen.</li></ol>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="panel panel-default">
+			    <div class="panel-heading" role="tab" id="headingSix">
+			      <h4 class="panel-title">
+			        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+			          Finished
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+			      <div class="panel-body">
+			        You have completed all the tasks. You can now close the window. Thank you.
+			      </div>
+			    </div>
+			  </div>
+			 </div>
+			</div>
+
+			<div class="col-md-5">
+				<h1>Task Screen</h1>
+				<div class="col-md-8 col-md-offset-1">
+					<iframe src="https://appetize.io/embed/1e0tjx1vzb9ebbd3fydkrteekc?device=nexus5&scale=85&autoplay=false&orientation=portrait&deviceColor=black&xdocMsg=true" width="400px" height="795px" frameborder="0" scrolling="no"  data-step="2" data-intro="You will be interacting with this mobile screen." data-position="left"></iframe>
+				</div>
+				
+			</div>
+
+		</div>
+	</div>
+	<script>
+		function startIntro(){
+			introJs().start();
+		}
+		window.onload = function(){
+			$('#myModal').modal('show');
+		}
+		// introJs().start();
+		$(function () {
+		  $('[data-toggle="popover1"]').popover({
+		  	placement: 'bottom',
+		  	html: true,
+		  	content: '<img src="img/Picture1.png" alt="">'
+		  });
+		  $('[data-toggle="popover2"]').popover({
+		  	placement: 'bottom',
+		  	html: true,
+		  	content: '<img src="img/Picture2.png" alt="">'
+		  });
+		  $('[data-toggle="popover3"]').popover({
+		  	placement: 'bottom',
+		  	html: true,
+		  	content: '<img src="img/Picture3.png" alt="">'
+		  });
+		  $('[data-toggle="popover4"]').popover({
+		  	placement: 'bottom',
+		  	html: true,
+		  	content: '<img src="img/Picture4.png" alt="">'
+		  });
+		  $('[data-toggle="popover5"]').popover({
+		  	placement: 'bottom',
+		  	html: true,
+		  	content: '<img src="img/Picture5.png" alt="">'
+		  });
+		  $('[data-toggle="popover6"]').popover({
+		  	placement: 'bottom',
+		  	html: true,
+		  	content: '<img src="img/Picture6.png" alt="">'
+		  });
+		  $('[data-toggle="popover7"]').popover({
+		  	placement: 'bottom',
+		  	html: true,
+		  	content: '<img src="img/Picture7.png" alt="">'
+		  });
+		  $('[data-toggle="popover8"]').popover({
+		  	placement: 'bottom',
+		  	html: true,
+		  	content: '<img src="img/Picture8.png" alt="">'
+		  });
+		  $('[data-toggle="popover9"]').popover({
+		  	placement: 'bottom',
+		  	html: true,
+		  	content: '<img src="img/calc_int.gif" alt="">'
+		  });
+		});
+		
+	</script>
+</body>
+</html>
