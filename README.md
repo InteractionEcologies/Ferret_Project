@@ -7,10 +7,10 @@ In order to get as many user logs as possible, the Ferret Logger application is 
 As soon as users perform tasks in the web page, their interaction logs are stored in the sqlite database. The Python codes for running the server, retrieving the data from the database, and analyzing the data to determine the similarities are in 'database' folder.
 
 ## Initialize a Ferret project
-### Step1. Run servers 
+### Step1. Run servers ###
 This project requires two servers - one for the database, the other for hosting web pages.
 
-_ Running a database server _
+#### Running a database server ####
 
 In the 'database' folder, check server.py file to specify the port number.
 
