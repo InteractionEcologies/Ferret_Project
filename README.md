@@ -10,9 +10,10 @@ As soon as users perform tasks in the web page, their interaction logs are store
 ### Step1. Run servers
 This project requires two servers - one for the database, the other for hosting web pages.
 
-** Running a database server **
+__ Running a database server __
 
-In the 'database' folder, run server.py file.
+In the 'database' folder, check server.py file to specify the port number.
+
 
 ```python server.py```
 
