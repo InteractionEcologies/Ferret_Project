@@ -12,8 +12,12 @@ This project requires two servers - one for the database, the other for hosting 
 
 #### Running a database server ####
 
-In the 'database' folder, check server.py file to specify the port number.
+In the 'database' folder, check server.py file to specify the port number. It is specified as 5001 for now.
 
+```
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=5001)
+```
 
 ```python server.py```
 
