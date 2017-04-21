@@ -11,5 +11,5 @@ As soon as users perform tasks in the web page, their interaction logs are store
 This project requires two servers - one for the database, the other for hosting web pages.
 ** Running a database server **
 In the 'database' folder, run server.py file.
-'''python server.py'''
+```python server.py```
 
