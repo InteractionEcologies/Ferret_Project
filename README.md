@@ -12,7 +12,7 @@ This project requires two servers - one for the database, the other for hosting 
 
 #### Running a database server ####
 
-In the 'database' folder, check server.py file to specify the port number. It is specified as 5001 for now.
+In the 'database' folder, check server.py file to specify the port number. It is specified as 5001 for now. This port number is identical to the Ferret Logger file's configuration, which is in ferret/logger/app/src/main/java/com/google/research/ic/alogger/URLConstants.java file. Make sure the port number in the server.py file is identical to the URLConstants.java file's configuration.
 
 ```
 if __name__ == "__main__":
@@ -34,4 +34,18 @@ python -m SimpleHTTPServer 8080
 You can specify the port number in this command. Put a different number in the place of 8080.
 
 
-#### Modifying the web page ####
+### Step2. Modifying the web page ###
+There are three big parts in the index.html file.
+
+- Description for set up
+- Description for tasks
+- Appetize.io emulator interface
+
+In order to change the description for tasks without changing other parts, start from the line 88 in the index.html file.
+
+
+### Step3. Publish Amazon Mechanical Turk HIT ###
+This project can be published as Amazon Mechanical Turk HIT to get a lot of user logs. The format of the HIT would be 'Survey'. Instead of providing the link for the survey, use the web page link.
+
+
+### Step3. Publish Amazon Mechanical Turk HIT ###
