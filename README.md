@@ -24,3 +24,14 @@ After you specified the port number, run the server.
 python server.py
 ```
 
+
+#### Running a web hosting server ####
+
+The webpage can be hosted by using a Python module 'SimpleHTTPServer'. In order to run this server, go into the 'web' folder, and run the following command.
+```
+python -m SimpleHTTPServer 8080
+```
+You can specify the port number in this command. Put a different number in the place of 8080.
+
+
+#### Modifying the web page ####
