@@ -19,5 +19,8 @@ if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5001)
 ```
 
-```python server.py```
+After you specified the port number, run the server.
+```
+python server.py
+```
 
