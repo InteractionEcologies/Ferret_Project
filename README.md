@@ -44,8 +44,9 @@ There are three big parts in the index.html file.
 In order to change the description for tasks without changing other parts, start from the line 88 in the index.html file.
 
 
-### Step3. Publish Amazon Mechanical Turk HIT ###
-This project can be published as Amazon Mechanical Turk HIT to get a lot of user logs. The format of the HIT would be 'Survey'. Instead of providing the link for the survey, use the web page link.
+### Step3. Gather interaction logs ###
+- This project can be published as Amazon Mechanical Turk HIT to get a lot of different interaction logs. When publishing a HIT, the format of it would be 'Survey'. Instead of providing the link for the survey, use the web page link. Specify other conditions to gather more qualified interaction logs. (e.g. 95% or higher acceptance rate, at least 500 approved HITs, region)
+- Download a csv file 
 
 
-### Step3. Publish Amazon Mechanical Turk HIT ###
+### Step4.  ###
